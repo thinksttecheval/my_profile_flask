@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="max-w-4xl mx-auto p-6">
+        <div class="bg-white shadow-lg rounded-xl p-6">
+            <div class="text-center">
+                <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="mx-auto rounded-full w-32 h-32">
+                <h1 class="text-3xl font-bold mt-4">John Doe</h1>
+                <p class="text-gray-600">QA Lead | Automation Enthusiast | Lifelong Learner</p>
+            </div>
+            <div class="mt-6">
+                <h2 class="text-xl font-semibold">About Me</h2>
+                <p class="mt-2">
+                    I'm a seasoned QA professional with over 10 years of experience in software testing, automation, and team leadership.
+                    I specialize in creating test strategies, facilitating UAT sessions, and ensuring high-quality software releases.
+                </p>
+            </div>
+            <div class="mt-6">
+                <h2 class="text-xl font-semibold">Skills</h2>
+                <ul class="list-disc list-inside mt-2">
+                    <li>Test Strategy & Planning</li>
+                    <li>Automation with Cucumber & Mochawesome</li>
+                    <li>QAse Test Management</li>
+                    <li>UAT Coordination</li>
+                </ul>
+            </div>
+            <div class="mt-6">
+                <h2 class="text-xl font-semibold">Contact</h2>
+                <p class="mt-2">john.doe@example.com</p>
+                <p>South Africa</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
