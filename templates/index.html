@@ -3,36 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-800">
-    <div class="max-w-4xl mx-auto p-6">
+    <div class="container mx-auto px-4 py-8">
         <div class="bg-white shadow-lg rounded-xl p-6">
             <div class="text-center">
-                <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="mx-auto rounded-full w-32 h-32">
-                <h1 class="text-3xl font-bold mt-4">John Doe</h1>
+                <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="mx-auto rounded-full w-40 h-40 object-cover">
+                <h1 class="text-3xl font-bold mt-4">Simphiwe Sithole</h1>
                 <p class="text-gray-600">QA Lead | Automation Enthusiast | Lifelong Learner</p>
             </div>
+
             <div class="mt-6">
                 <h2 class="text-xl font-semibold">About Me</h2>
                 <p class="mt-2">
-                    I'm a seasoned QA professional with over 10 years of experience in software testing, automation, and team leadership.
-                    I specialize in creating test strategies, facilitating UAT sessions, and ensuring high-quality software releases.
+                    Seasoned QA professional with over 15 years of experience in software testing, automation, and team leadership.
+                    Specializing in creating test strategies, facilitating UAT sessions, and ensuring high-quality software releases.
                 </p>
             </div>
+
             <div class="mt-6">
                 <h2 class="text-xl font-semibold">Skills</h2>
-                <ul class="list-disc list-inside mt-2">
+                <ul class="list-disc list-inside mt-2 grid grid-cols-1 sm:grid-cols-2 gap-x-4">
                     <li>Test Strategy & Planning</li>
                     <li>Automation with Cucumber & Mochawesome</li>
                     <li>QAse Test Management</li>
                     <li>UAT Coordination</li>
+                    <li>API Testing</li>
+                    <li>CI/CD Integration</li>
+                    <li>Regression Testing</li>
+                    <li>Cross-functional Collaboration</li>
                 </ul>
             </div>
+
             <div class="mt-6">
                 <h2 class="text-xl font-semibold">Contact</h2>
-                <p class="mt-2">john.doe@example.com</p>
+                <p class="mt-2">simphiwes@gmail.com | 076 064 8164</p>
                 <p>South Africa</p>
+            </div>
+
+            <!-- Resume Download Section -->
+            <div class="mt-6">
+                <h2 class="text-xl font-semibold">Résumé</h2>
+                <p class="mt-2">You can download a PDF version of my résumé below:</p>
+                <a href="{{ url_for('download_resume') }}" class="inline-block mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+                    Download Résumé (PDF)
+                </a>
             </div>
         </div>
     </div>

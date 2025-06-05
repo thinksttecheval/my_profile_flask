@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my_profile_flask
+    name: my-profile-flask
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn main:application
+    startCommand: gunicorn app:app
