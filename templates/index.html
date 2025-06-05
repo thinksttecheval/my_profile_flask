@@ -12,7 +12,16 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body class="page-body">
-  <div class="page-container">
+
+  <!-- Dark Mode Toggle Button -->
+  <div class="flex justify-end p-4">
+    <button class="dark-toggle-btn" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+  </button>
+  
+  </div>
+  <!-- End Dark Mode Toggle -->
+
+  <div class="page-container slide-in">
     <div class="card">
       <div class="text-center">
         <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="profile-img">
@@ -62,5 +71,12 @@
       </div>
     </div>
   </div>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
 </body>
 </html>
