@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: my_profile_flask
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
