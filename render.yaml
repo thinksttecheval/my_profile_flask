@@ -3,4 +3,4 @@ services:
     name: my_profile_flask
     env: python
     buildCommand: ""
-    startCommand: "gunicorn app:app"
+    startCommand: "gunicorn main:application"
